@@ -8,3 +8,4 @@ kontena:
   image: kontena/cli
   commands:
     - SSL_IGNORE_ERRORS=true kontena stack upgrade
+    
