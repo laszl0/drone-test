@@ -1,11 +1,12 @@
-build:
-  image: ruby:2.3
-  commands:
-    - bundle install --path=bundler
-    - rspec spec/
+
     
 kontena:
   image: kontena/cli
   commands:
     - SSL_IGNORE_ERRORS=true kontena stack upgrade
+build:
+  image: ruby:2.3
+  commands:
+    - bundle install --path=bundler
+    - rspec spec/
     
